@@ -1,24 +1,25 @@
-# firebase-test
+# Vue & Firebase Authentication Demo
 
-## Project setup
+## Set up
+
+Clone project then:
+
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Firebase config
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Create a new file in the /src root called "firebaseConfig.js" with your own details. Some of these aren't needed for this project but this is the full object.
 
-### Lints and fixes files
 ```
-npm run lint
+export default {
+  apiKey: '<your key>',
+  authDomain: '<your auth domain>',
+  databaseURL: '<your database url>',
+  projectId: '<your projectId>',
+  storageBucket: '<your storage bucket>',
+  messagingSenderId: '<your id>',
+  appId: '<your id>'
+};
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
